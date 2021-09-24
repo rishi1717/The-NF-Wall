@@ -47,13 +47,13 @@ function getQuote(){
 
     $('#tweet-quote').attr(
         'href',
-        'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
-          encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
+        'https://twitter.com/intent/tweet?hashtags=NF&related=freecodecamp&text=' +
+          encodeURIComponent('"' + currentQuote + '" -' + currentAuthor)
       );
     
       $('#tumblr-quote').attr(
         'href',
-        'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' +
+        'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=NF,freecodecamp&caption=' +
           encodeURIComponent(currentAuthor) +
           '&content=' +
           encodeURIComponent(currentQuote) +
