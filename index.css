@@ -5,10 +5,7 @@
     vertical-align: baseline;
 }
 
-div{
-    position: relative;
-    z-index: 2;
-}
+
 
 body{
     background-color: #333;
@@ -39,7 +36,7 @@ body{
     margin-bottom: 5px;
     border-radius: 3px;
     position: relative;
-    width: 450px;
+    width: 500px;
     height: 20px;
     padding: 10px 50px;
     display: flexbox;
@@ -49,15 +46,15 @@ body{
 #quote-box {
     border-radius: 3px;
     position: relative;
-    width: 450px;
+    width: 500px;
     padding: 40px 50px;
-    display: table;
+    display: grid;
     background-color: #fff;
 }
 
 .quote-text{
         text-align: center;
-        width: 450px;
+        width: 500px;
         height: auto;
         clear: both;
         font-weight: 500;
@@ -70,7 +67,7 @@ body{
 }
 
 .quote-author{
-    width: 450px;
+    width: 500px;
     height: auto;
     clear: both;
     padding-top: 20px;
@@ -79,10 +76,62 @@ body{
 }
 
 .buttons{
-    width: 450px;
+    width: 500px;
     margin: auto;
     display: block;
 }
+
+@media (max-width: 550px) {
+    #heading-box{
+        text-align: center;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        position: relative;
+        width: 350px;
+        height: 20px;
+        padding: 10px 50px;
+        display: flexbox;
+        background-color: #fff;
+    }
+    
+    #quote-box {
+        border-radius: 3px;
+        position: relative;
+        width: 350px;
+        padding: 40px 50px;
+        display: grid;
+        background-color: #fff;
+    }
+    
+    .quote-text{
+            text-align: center;
+            width: 350px;
+            height: auto;
+            clear: both;
+            font-weight: 500;
+            font-size: 1.75em;
+    }
+    
+    .quote-text i{
+        font-size: 1em;
+        margin-right:0.4em;
+    }
+    
+    .quote-author{
+        width: 350px;
+        height: auto;
+        clear: both;
+        padding-top: 20px;
+        font-size: 1em;
+        text-align: right;
+    }
+    .buttons{
+        width: 350px;
+        margin: auto;
+        display: block;
+    }
+
+  }
 
 .button{
     height: 38px;
