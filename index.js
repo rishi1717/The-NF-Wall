@@ -23,7 +23,7 @@ function getQuotes(){
         headers:{
             Accept:'applications/json'
         },
-        url:'https://raw.githubusercontent.com/rishi1717/nf-quotes/main/index.json',
+        url:'https://raw.githubusercontent.com/rishi1717/The-NF-Wall/main/index.json',
         success:function(jsonQuotes){
             if(typeof jsonQuotes==='string'){
                 quotesData=JSON.parse(jsonQuotes);
